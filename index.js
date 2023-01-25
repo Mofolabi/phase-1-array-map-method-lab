@@ -11,6 +11,24 @@ const tutorials = [
   'what is JSONP?'
 ];
 
+// const titleCased = () => {
+//   return tutorials
+// }
 const titleCased = () => {
-  return tutorials
-}
+  let tutorial2 = [];
+  for (const member of tutorials) {
+    let firstMemberArray = member.split(" ");
+    let firstMemberArrayCapitalized = [];
+  
+
+for (const word of firstMemberArray)
+      firstMemberArrayCapitalized.push(
+        word[0].toUpperCase() + word.substring(1)
+      );
+
+let firstMemberFinal = firstMemberArrayCapitalized.join(" ");
+
+  tutorial2.push(firstMemberFinal);
+  }
+  return tutorial2;
+};
